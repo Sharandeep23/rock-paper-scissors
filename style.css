@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    background: hsl(213, 73%, 22%);
+    color: whitesmoke;
+}
+
+/* Heading */
+header {
+    background: hsl(350, 79%, 59%);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+/* Body */
+/* Score Board */
+
+.score-board {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+
+    /* max-width instead of width so that we don't get annoying scrollbars */
+    max-width: 300px;
+
+    /* Centering score board */
+    margin: 40px auto 30px;
+
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem 2rem;
+
+    /* So we can position the badges relative to this score-board */
+    position: relative;
+}
+
+.badge {
+    background: hsl(350, 79%, 59%);
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 0.3rem 0.7rem;
+}
+
+#user {
+    position: absolute;
+    top: 39px;
+    left: -30px;
+}
+
+#computer {
+    position: absolute;
+    top: 39px;
+    right: -60px;
+}
+
+/* Message */
+
+.message {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.message p {
+    margin: 1.2rem;
+}
+
+/* Choices */
+
+.choices {
+    margin: 60px;
+    text-align: center;
+}
+
+.choice {
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    margin: 0 1rem;
+    padding: 1.5rem;
+    /* For circling border */
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+}
+
+.choice img {
+    width: 140px;
+    height: 140px;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: hsl(224, 48%, 16%);
+}
+
+/* Action  message */
+#action-message {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
