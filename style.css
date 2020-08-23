@@ -8,6 +8,8 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     background: hsl(213, 73%, 22%);
     color: whitesmoke;
+    /* To avoid freaking scrollbars */
+    height: 100vh;
 }
 
 /* Heading */
@@ -94,6 +96,7 @@ header h1 {
 }
 
 .choice img {
+    /* Width, height must be same for a circle */
     width: 140px;
     height: 140px;
 }
@@ -108,4 +111,11 @@ header h1 {
     text-align: center;
     font-size: 2rem;
     font-weight: 300;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
 }
