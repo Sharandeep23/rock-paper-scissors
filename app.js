@@ -5,7 +5,6 @@ let computerScore = 0;
 const userScoreEl = document.querySelector("#user-score");
 const computerScoreEl = document.querySelector("#computer-score");
 
-const scoreBoardEl = document.querySelector(".score-board");
 const messageEl = document.querySelector(".message p");
 
 const rockEl = document.querySelector("#rock");
