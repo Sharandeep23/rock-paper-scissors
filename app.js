@@ -96,8 +96,8 @@ function draw(userChoice, computerChoice) {
                             ${userChoice.toUpperCase()}<sub>user</sub>
                              eqauls ${computerChoice.toUpperCase()}<sub>computer</sub>. It's a tie... 😨
                              `;
-    document.querySelector(`#${userChoice}`).classList.add("draw");
     // Adding a class and removing after 300ms
+    document.querySelector(`#${userChoice}`).classList.add("draw");
     setTimeout(() => {
         document.querySelector(`#${userChoice}`).classList.remove("draw");
     }, 300);
