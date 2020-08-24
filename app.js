@@ -51,7 +51,6 @@ function game(userChoice) {
         case "paperscissors":
         case "scissorsrock":
             lose(userChoice, computerChoice);
-            break;
     }
 }
 
@@ -92,7 +91,7 @@ function lose(userChoice, computerChoice) {
 }
 function draw(userChoice, computerChoice) {
     // Because it's draw we don't increment score
-    // So we don't need to update HTML
+    // So we don't need to update scores
     messageEl.innerHTML = `
                             ${userChoice.toUpperCase()}<sub>user</sub>
                              eqauls ${computerChoice.toUpperCase()}<sub>computer</sub>. It's a tie... 😨
