@@ -94,7 +94,7 @@ function draw(userChoice, computerChoice) {
     // So we don't need to update scores
     messageEl.innerHTML = `
                             ${userChoice.toUpperCase()}<sub>user</sub>
-                             eqauls ${computerChoice.toUpperCase()}<sub>computer</sub>. It's a tie... 😨
+                             equals ${computerChoice.toUpperCase()}<sub>computer</sub>. It's a tie... 😨
                              `;
     // Adding a class and removing after 300ms
     document.querySelector(`#${userChoice}`).classList.add("draw");
